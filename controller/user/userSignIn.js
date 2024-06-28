@@ -1,7 +1,7 @@
 const bcrypt = require("bcryptjs");
 const userModel = require("../../models/userModel");
 const jwt = require("jsonwebtoken");
-
+require("dotenv").config();
 exports.userSignInController = async (req, res) => {
   try {
     const { email, password } = req.body;
@@ -35,6 +35,8 @@ exports.userSignInController = async (req, res) => {
       const tokenOption = {
         httpOnly: true,
         secure: true,
+        sameSite: "None",
+        domain: process.env.FRONTEND_URL,
       };
 
       res.cookie("token", token, tokenOption).status(200).json({

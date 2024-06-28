@@ -4,6 +4,7 @@ exports.userDetailsController = async (req, res) => {
   try {
     console.log(req.userId);
     const user = await userModel.findById(req.userId);
+    console.log(user);
     res.status(200).json({
       success: true,
       message: "User Details",
