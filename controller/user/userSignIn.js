@@ -43,6 +43,7 @@ exports.userSignInController = async (req, res) => {
         success: true,
         error: false,
       });
+      console.log("Login successful");
     } else {
       throw new Error("Please check Password");
     }
