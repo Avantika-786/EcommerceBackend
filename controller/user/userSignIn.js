@@ -35,12 +35,15 @@ exports.userSignInController = async (req, res) => {
       const tokenOption = {
         expires: new Date(Date.now() + 3 * 24 * 60 * 60 * 1000),
         httpOnly: true,
+        secure: process.env.NODE_ENV === "production", // Secure cookies only in production
+        sameSite: "None",
+        domain: process.env.COOKIE_DOMAIN,
       };
 
       res.cookie("token", token, tokenOption).status(200).json({
         message: "Login successfully",
         data: token,
-        user,
+
         success: true,
         error: false,
       });
