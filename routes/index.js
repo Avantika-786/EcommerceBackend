@@ -40,7 +40,7 @@ const {
 } = require("../controller/product/searchProduct");
 const filterProductController = require("../controller/product/filterProduct");
 router.post("/signup", userSignUpController);
-router.post("/login", userSignInController);
+router.post("/login", authToken, userSignInController);
 router.get("/userDetails", authToken, userDetailsController);
 router.get("/userLogout", userLogoutController);
 router.get("/allUsers", authToken, allUsersController);
