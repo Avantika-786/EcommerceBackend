@@ -33,8 +33,7 @@ exports.userSignInController = async (req, res) => {
       });
 
       const tokenOption = {
-        httpOnly: true,
-        secure: process.env.NODE_ENV === "production", // Secure cookies only in production
+        httpOnly: true, // Secure cookies only in production
         sameSite: "None",
         domain: process.env.COOKIE_DOMAIN,
       };
