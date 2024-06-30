@@ -11,7 +11,7 @@ exports.authToken = (req, res, next) => {
     if (!token) {
       return res.status(401).json({
         message: "Please Log In",
-        success: false,
+        success: false,error:true,
       });
     }
 
