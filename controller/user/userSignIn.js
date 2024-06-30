@@ -35,7 +35,8 @@ exports.userSignInController = async (req, res) => {
       const tokenOption = {
         httpOnly: true, // Secure cookies only in production
         sameSite: "None",
-        domain: process.env.COOKIE_DOMAIN,
+        secure: true,
+        domain: process.env.BACKEND_URL,
       };
 
       res.cookie("token", token, tokenOption).status(200).json({
