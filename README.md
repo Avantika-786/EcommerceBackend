@@ -1,3 +1,4 @@
+
 Introduction : 
 
     A web-based platform for buying and selling electronic gadgets among customers.
@@ -6,14 +7,6 @@ Introduction :
     orders, and user information efficiently.
     Designed category-wise sections to enhance user experience and facilitate 
     easy navigation using React.js
-    
-Front-end : 
-
-    ReactJS - Frontend framework
-    Redux with useDispatch & useSelector hooks - For state management
-    Redux Thunk - For asynchronous actions
-    React Router - For general routing & navigation
-    Material-UI w/ lots of CSS customisations - UI library
 Back-end :
 
     Node.js - Runtime environment for JS
