@@ -1,10 +1,12 @@
 Introduction : 
+
     A web-based platform for buying and selling electronic gadgets among customers.
     Built using MERN stack(MongoDB, Express, React, and Node.js).  
     Implemented a comprehensive admin panel using React.js for managing products, orders, and user information efficiently.
     Designed category-wise sections to enhance user experience and facilitate easy navigation using React.js
     
 Front-end : 
+
     ReactJS - Frontend framework
     Redux with useDispatch & useSelector hooks - For state management
     Redux Thunk - For asynchronous actions
