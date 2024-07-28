@@ -33,3 +33,4 @@ Back-end :
     Bcrypt.js - For hashing passwords
     
     Dotenv - To load environment variables from a .env file
+![Screenshot (376)](https://github.com/user-attachments/assets/c9dce39d-2f88-471c-aa84-b8db09354540)
